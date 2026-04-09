@@ -1,8 +1,8 @@
 ---
-description: Start a build-log recording session. Creates the scratch file that gates all note capture.
+description: Start a session-log recording session. Creates the scratch file that gates all note capture.
 ---
 
-Begin a build-log session.
+Begin a session-log session.
 
 Resolve the notes directory: use `$TUTOR_NOTES_DIR` if set, otherwise default to `~/tutor-notes/`. If the directory doesn't exist, create it.
 
@@ -13,7 +13,7 @@ Resolve the notes directory: use `$TUTOR_NOTES_DIR` if set, otherwise default to
 
 2. If arguments are provided ($ARGUMENTS), use them as the session topic. Otherwise mark as "untitled".
 
-3. Write the scratch header per `build-log` skill format:
+3. Write the scratch header per `session-log` skill format:
 
 ```markdown
 ---

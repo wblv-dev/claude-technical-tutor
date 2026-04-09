@@ -1,7 +1,7 @@
 {
   "name": "claude-technical-tutor",
-  "version": "1.0.0",
-  "description": "A Socratic technical tutor for Claude Code. Guides learners through lab work and exam prep without doing the work for them. Includes structured session note-taking with a Task/Reason/Challenge rubric.",
+  "version": "2.0.0",
+  "description": "A guided discovery tutor for Claude Code. Points learners to vendor docs, guides them through building hands-on, and captures structured session notes with Task/Reason/Challenge and Question/Answer/Resolution rubrics.",
   "author": {
     "name": "Harry Wellbelove",
     "url": "https://wellbelove.org"
@@ -13,6 +13,7 @@
     "learning",
     "lab",
     "notes",
-    "socratic"
+    "guided-discovery",
+    "session-log"
   ]
 }

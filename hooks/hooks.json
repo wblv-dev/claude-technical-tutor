@@ -5,8 +5,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash -c 'NOTES_DIR=\"${TUTOR_NOTES_DIR:-$HOME/tutor-notes}\"; SCRATCH=\"$NOTES_DIR/.scratch-active.md\"; if [ -f \"$SCRATCH\" ]; then TOPIC=$(grep -m1 \"^topic:\" \"$SCRATCH\" 2>/dev/null | sed \"s/topic: //\"); echo \"WARNING: Active build-log scratch not wrapped (topic: ${TOPIC:-untitled}). Run /project-end next session or /recover if you forgot /project-start.\"; fi'",
-            "statusMessage": "Checking for unwrapped build-log..."
+            "command": "bash -c 'NOTES_DIR=\"${TUTOR_NOTES_DIR:-$HOME/tutor-notes}\"; SCRATCH=\"$NOTES_DIR/.scratch-active.md\"; if [ -f \"$SCRATCH\" ]; then TOPIC=$(grep -m1 \"^topic:\" \"$SCRATCH\" 2>/dev/null | sed \"s/topic: //\"); echo \"WARNING: Active session-log scratch not wrapped (topic: ${TOPIC:-untitled}). Run /session-end next session or /recover if you forgot /session-start.\"; fi'",
+            "statusMessage": "Checking for unwrapped session-log..."
           }
         ]
       }
